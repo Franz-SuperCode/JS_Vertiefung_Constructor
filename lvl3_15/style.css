@@ -1,0 +1,88 @@
+ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+ul li {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    list-style: none;
+    border: 2px solid black;
+}
+
+ul img {
+    width: 10%;
+}
+
+form {
+
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+    grid-template-rows: repeat(6, 0.5fr);
+    grid-template-areas:
+        "h1 h1 h1 h1"
+        "nameLabel nameLabel name name"
+        "weightLabel weightLabel weight weight"
+        "catchDateLabel catchDateLabel catchDate catchDate"
+        "attacksLabel attacksLabel attacks attacks"
+        ". . button .";
+    text-align: right;
+    gap: 1rem;
+    align-items: center;
+}
+
+#h1 {
+    text-align: center;
+    grid-area: h1;
+}
+
+#name {
+    grid-area: name;
+}
+
+#nameLabel {
+    grid-area: nameLabel;
+}
+
+#weight {
+    grid-area: weight;
+}
+
+#weightLabel {
+    grid-area: weightLabel;
+}
+
+#catchDate {
+    grid-area: catchDate;
+}
+
+#catchDataLabel {
+    grid-area: catchDateLabel;
+}
+
+#attacks {
+    grid-area: attacks;
+}
+
+#attacksLabel {
+    grid-area: attacksLabel;
+}
+
+#button {
+    grid-area: button;
+}
+
+
+input {
+    width: 30%;
+}
+
+button {
+    margin: 0 auto;
+    width: 30%;
+
+}
