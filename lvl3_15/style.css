@@ -22,14 +22,15 @@ form {
 
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
-    grid-template-rows: repeat(6, 0.5fr);
+    grid-template-rows: repeat(7, 0.5fr);
     grid-template-areas:
         "h1 h1 h1 h1"
         "nameLabel nameLabel name name"
         "weightLabel weightLabel weight weight"
         "catchDateLabel catchDateLabel catchDate catchDate"
         "attacksLabel attacksLabel attacks attacks"
-        ". . button .";
+        "imgLabel imgLabel img img"
+        ". . button button";
     text-align: right;
     gap: 1rem;
     align-items: center;
@@ -76,13 +77,20 @@ form {
     grid-area: button;
 }
 
+#imgLabel {
+    grid-area: imgLabel;
+}
+
+#img {
+    grid-area: img;
+}
+
 
 input {
     width: 30%;
 }
 
 button {
-    margin: 0 auto;
     width: 30%;
 
 }
